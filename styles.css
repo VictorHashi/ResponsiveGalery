@@ -1,0 +1,77 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+}
+#container{
+    width: 90%;
+    height: initial;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+}
+.gridLayout{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+}
+.item img{
+    max-width: 200px;
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.item img{
+    align-items: center;
+    justify-content: center; 
+}
+/*Carrossel*/
+.carrousel{
+    max-width: 100vw;
+    max-height: 50vh;
+    height: 1000px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.slides{
+    max-width: 100vw;
+    max-height: 50vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.slides img{
+    max-width: 100vw;
+    max-height: 50vh;
+    width: auto;
+    justify-self: center;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}/*
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}*/
